@@ -1,6 +1,6 @@
-const myWistToYou = `Heh, xin chào, lời đầu tiên, xin phép được: "Chúc mừng năm mới", nếu bạn đọc được tin nhắn và thiệp chúc mừng này, có thể bạn là một người đóng vai trò rất quan trọng trong cuộc sống của tôi một năm qua, bạn thân, bạn cũ, bạn nhậu, đồng nghiệp,... cũng có thể là một ai đó tôi follow trên mxh, hoặc thậm chí là người có xích mích với tôi. Chúng ta có thể đã cùng cười, cùng khóc, đi cafe, đi nhậu, gây gổ, chửi nhau và xích mích hay bất đồng quan điểm. Nhưng qua tất cả những điều đó, khi nhìn lại, tôi thấy mình học được nhiều điều từ những chuyện xảy ra, dù là lớn hay nhỏ. Tôi cảm ơn và trân trọng tất cả những điều đó, và tôi hy vọng bạn cũng vậy. Năm mới đã đến, dù đang cảm thấy buồn bực hay khó chịu gì, mong chúng ta hay bỏ qua và tha thứ cho nhau, bỏ qua những tính xấu, những bất đồng và cãi vã trong năm cũ và nhìn nhau bằng con người mới.\nI know it's life, people gotta move on, even though we parted way, i hope you're safe. Năm mới vui vẻ, bạn của tôi !!!`;
+const myWishToYou = `Heh, xin chào, lời đầu tiên, xin phép được: "Chúc mừng năm mới", nếu bạn đọc được tin nhắn và thiệp chúc mừng này, có thể bạn là một người đóng vai trò rất quan trọng trong cuộc sống của tôi một năm qua, bạn thân, bạn cũ, bạn nhậu, đồng nghiệp,... cũng có thể là một ai đó tôi follow trên mxh, hoặc thậm chí là người có xích mích với tôi. Chúng ta có thể đã cùng cười, cùng khóc, đi cafe, đi nhậu, gây gổ, chửi nhau và xích mích hay bất đồng quan điểm. Nhưng qua tất cả những điều đó, khi nhìn lại, tôi thấy mình học được nhiều điều từ những chuyện xảy ra, dù là lớn hay nhỏ. Tôi cảm ơn và trân trọng tất cả những điều đó, và tôi hy vọng bạn cũng vậy. Năm mới đã đến, dù đang cảm thấy buồn bực hay khó chịu gì, mong chúng ta hay bỏ qua và tha thứ cho nhau, bỏ qua những tính xấu, những bất đồng và cãi vã trong năm cũ và nhìn nhau bằng con người mới.\nI know it's life, people gotta move on, even though we parted way, i hope you're safe. Năm mới vui vẻ, bạn của tôi !!!`;
 function sendMyLove() {
-    alert(myWistToYou);
+    alert(myWishToYou);
 }
 
 document.addEventListener("DOMContentLoaded", sendMyLove);
@@ -55,8 +55,7 @@ window.onload = function () {
     }, 1000);
 
     function createFloatingEmojis() {
-        const emojiList = ["", "", "", "", ""];
-        for (let i = 0; i < 10; i++) {
+        const emojiList = ["🎉", "🎊", "🥳", "🎆", "🎇", "🎈", "🍾", "🎂", "🍰", "🍻", "🥂", "✨", "🌟", "🎶", "🎵"];        for (let i = 0; i < 10; i++) {
             const emoji = document.createElement("div");
             emoji.className = "floating-emoji";
             emoji.textContent = emojiList[Math.floor(Math.random() * emojiList.length)];
